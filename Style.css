@@ -1,22 +1,24 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
-    font-family: 
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
 body {
     font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
 }
+
+
 
 header, footer {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 0.5rem 0;
 }
 
 nav {
@@ -46,3 +48,96 @@ nav {
     text-decoration: underline;
 }
 
+.accueil-image {
+    background-image: url( "images/land.jpg");
+    background-repeat: no-repeat;
+    /* background-size: 300px 100px; */
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    margin: 0;
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: #f9f9f9;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+}
+
+img {
+    width: 500px;
+    height: 300px;
+}
+
+.input {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    text-align: center;
+    background-color: #fff;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h3 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
