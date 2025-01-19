@@ -48,12 +48,6 @@ nav {
     text-decoration: underline;
 }
 
-.accueil-image {
-    background-image: url( "images/land.jpg");
-    background-repeat: no-repeat;
-    /* background-size: 300px 100px; */
-}
-
 section {
     margin-bottom: 2rem;
 }
